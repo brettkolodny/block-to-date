@@ -1,0 +1,28 @@
+{
+  "name": "karura-scan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html --public-url ./ && echo '/*    /index.html   200' > ./dist/_redirects"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat",
+    "@types/react": "^17.0.38",
+    "autoprefixer": "^9",
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^7",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "@acala-network/api": "2.3.1",
+    "@polkadot/api": "6.0.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "browserslist": [
+    "since 2017-06"
+  ]
+}
